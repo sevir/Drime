@@ -49,6 +49,8 @@ drime.setTray = function(){
 	tray.setMenu(menu);
 };
 
-$(document).ready(function(){
-	drime.init();
-});
+drime.init();
+
+// $(document).ready(function(){
+// 	drime.init();
+// });
