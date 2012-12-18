@@ -1,6 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<ti:app xmlns:ti='http://ti.appcelerator.org'>
-<!-- These values are edited/maintained by TideSDK Developer -->
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+
 <id>com.digio.drime</id>
 <name>Drime</name>
 <version>1.0</version>
@@ -8,23 +7,22 @@
 <url>http://www.digio.es</url>
 <icon>default_app_logo.png</icon>
 <copyright>2012 by sevir</copyright>
-<!-- Window Definition - these values can be edited -->
+
 <window>
 <id>initial</id>
 <title>Drime</title>
 <url>app://index.html</url>
-<width>390</width>
+<width>0</width>
 <max-width>3000</max-width>
 <min-width>0</min-width>
-<height>181</height>
+<height>0</height>
 <max-height>3000</max-height>
 <min-height>0</min-height>
 <fullscreen>false</fullscreen>
-<resizable>false</resizable>
-<chrome scrollbars="false">false</chrome>
-<maximizable>false</maximizable>
-<minimizable>false</minimizable>
+<resizable>true</resizable>
+<chrome scrollbars="true">true</chrome>
+<maximizable>true</maximizable>
+<minimizable>true</minimizable>
 <closeable>true</closeable>
-<transparent-background>true</transparent-background>
 </window>
 </ti:app>

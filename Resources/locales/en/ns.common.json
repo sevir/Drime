@@ -1,0 +1,13 @@
+{
+    "app": {
+      "title": "Drime · Time Tracking"
+    },
+    "menu":{
+    	"open": "Open Drime",
+    	"settings": "Settings",
+    	"new_task": "New task",
+    	"todo": "To do list",
+    	"exit": "Exit"
+    }
+}
+ 
