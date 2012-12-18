@@ -13,12 +13,12 @@
 <id>initial</id>
 <title>Drime</title>
 <url>app://index.html</url>
-<width>100</width>
+<width>0</width>
 <max-width>3000</max-width>
 <min-width>0</min-width>
-<height>1</height>
+<height>0</height>
 <max-height>3000</max-height>
-<min-height>200</min-height>
+<min-height>0</min-height>
 <fullscreen>false</fullscreen>
 <resizable>true</resizable>
 <chrome scrollbars="true">true</chrome>

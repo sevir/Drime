@@ -5,28 +5,19 @@ drime.init = function(){
         Ti.UI.getCurrentWindow().addEventListener(Ti.MINIMIZED, function(event) {
         current_window.hide();
     });
-
-    tray = Ti.UI.addTray("", function(evt) {
-        if (evt.getType() == 'clicked') {
-            if (!current_window.isVisible()) {
-                current_window.show();
-            }
-        }
-    });
 };
 
 drime.setTray = function(){
-	var tray = Ti.UI.addTray('imgs/tray.png'),
+	var tray = Ti.UI.addTray('app://tray.png'),
     menu = Ti.UI.createMenu(),
 
     //Add some menu items
     menuItems = [
-
         Ti.UI.createMenuItem('Change Icon', function(e) {
             //Something's going on... let's change the icon.
-            tray.setIcon('imgs/tray-active.png');
+            tray.setIcon('app://tray-active.png');
             setTimeout(function() {
-                tray.setIcon('imgs/tray.png');
+                tray.setIcon('app://tray.png');
             }, 3000);
         }),
         
@@ -35,9 +26,7 @@ drime.setTray = function(){
         }),
         
         Ti.UI.createMenuItem('Quit', function(e) {
-            confirm('You sure?', function() {
-                Ti.App.exit();
-            });
+            Ti.App.exit();
         })
 
     ];
@@ -51,4 +40,5 @@ drime.setTray = function(){
 
 $(document).ready(function(){
 	drime.init();
+    drime.setTray();
 });
